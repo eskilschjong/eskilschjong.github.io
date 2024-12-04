@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(226, 190, 224);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu Mono', cursive;
+  color: #4b003b;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  background-color: rgb(75, 0, 59);
+  margin-top: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: rgb(75, 0, 59);
+  margin-top: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+h3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.15rem;
+  background-color: rgb(75, 0, 59);
+  margin-top: 0.2rem;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  color: #4b003b;
+  font-size: 1.2rem;
+  width: 60%;
+  margin: 0;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 70%;
+  margin-top: 5vh;
+  height: 90%;
+  border-left: 0.2rem solid #b977ae;
+  border-right: 0.2rem solid #b977ae;
+}
+
+.personal-projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to right, #ff7f08, #f5d06b, #ff5715);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.personal-projects-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fffed5;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 100%;
+}
+
+.personal-projects-bg a , .coming-soon {
+  color: rgb(75, 0, 59);
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  width: fit-content;
+  padding: 0.3rem 1rem;
+  border: 0.1rem solid rgb(75, 0, 59);
+  border-radius: 50rem;
+}
+
+.personal-projects-bg a:hover {
+  background-color: rgb(75, 0, 59);
+  color: #fffed5;
+}
+
+.coming-soon {
+  color: grey;
+  border-color: grey;
+}
+
+.socials {
+  color: rgb(75, 0, 59);
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  color: rgb(75, 0, 59);
+  font-size: 2rem;
+}
+
+@media (orientation: portrait) {
+  .App {
+    height: auto;
+  }
+
+  .middle-container {
+    width: 90%;
+    margin-top: 2vh;
+    height: auto;
+    border: none;
+  }
+
+  p {
+    width: 80%;
+  }
+}
