@@ -17,7 +17,7 @@ function App() {
             <a href="https://eskilschjong.github.io/gambling/blackjack">Blackjack</a>
             <a href="https://eskilschjong.github.io/gambling/multiplier">Multiplier Time</a>
             <h3>Coming soon</h3>
-            <div className='coming-soon'>Fishing Game</div>
+            <div className='coming-soon'>2D Basketball Game</div>
           </div>
         </div>
         <div className='socials'>
